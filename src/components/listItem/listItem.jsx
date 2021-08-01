@@ -3,7 +3,7 @@ import "./listitem.scss"
 function ListItem() {
     return (
         <div className="listitem">
-            item
+           movies
         </div>
     )
 }
