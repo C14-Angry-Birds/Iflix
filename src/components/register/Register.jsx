@@ -21,21 +21,22 @@ export default function Register() {
         <p>
           Ready to watch?
         </p>
-        {!email ? (
+         (
           <div className="input">
             <input type="email" placeholder="email address"  />
             <button className="registerButton" o>
               Lets Go
             </button>
           </div>
-        ) : (
+        ) 
+        (
           <form className="input">
             <input type="password" placeholder="password"/>
             <button className="registerButton" >
               Watch Movies
             </button>
           </form>
-        )}
+        )
       </div>
     </div>
   );

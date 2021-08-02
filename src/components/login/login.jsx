@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./login.scss";
 
 export default function Login() {
+  const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -21,6 +22,11 @@ export default function Login() {
         <form>
           <h1>Sign In</h1>
           <input
+            type="text"
+            placeholder="Username"
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <input
             type="email"
             placeholder="Email or phone number"
             onChange={(e) => setEmail(e.target.value)}
@@ -30,6 +36,7 @@ export default function Login() {
             placeholder="Password"
             onChange={(e) => setPassword(e.target.value)}
           />
+          
           <button className="loginButton">
             Sign In
           </button>
